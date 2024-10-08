@@ -13,7 +13,7 @@
     "husky:run":"pnpm run lint && lint-staged"
   },
   "lint-staged": {
-    "*.js": [
+   "*.{js,jsx,ts,tsx}": [
       "prettier --write",
       "git add"
     ]
