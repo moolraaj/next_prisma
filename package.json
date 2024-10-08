@@ -8,8 +8,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "husky:prepare": "npx husky init && pnpm install",
-    "prepare": "husky"
+    "husky:prepare": "npx husky-init && pnpm install",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@prisma/client": "^5.20.0",

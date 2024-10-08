@@ -10,10 +10,8 @@ DbConnect()
 
 export async function POST(req:Request) {
     const {title,description}=await req.json()
- 
     const resp=await prisma.all_Blogs.create({data:{title,description}})
     return NextResponse.json({status:201,message:'post created successfully',resp:[resp]})
-     
 }
 
 
