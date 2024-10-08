@@ -10,7 +10,7 @@
     "lint": "next lint",
     "husky:prepare": "npx husky-init && pnpm install",
     "prepare": "husky install",
-    "husky":"pnpm run lint && lint-staged"
+    "husky:run":"pnpm run lint && lint-staged"
   },
   "lint-staged": {
     "*.js": [
